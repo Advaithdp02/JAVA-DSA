@@ -16,5 +16,21 @@ public class Main {
 
         list.display();
         System.out.println(list.findMiddle());
+
+
+        DLL dlist= new DLL();
+        dlist.insertFirst(3);
+        dlist.insertFirst(4);
+        dlist.insertFirst(13);
+        dlist.insertFirst(42);
+        dlist.insertFirst(2);
+        dlist.insertLast(8);
+        dlist.insert(7,2);
+        dlist.display();
+
+        dlist.deleteLast();
+        dlist.deleteFirst();
+        dlist.delete(2);
+        dlist.display();
     }
 }
