@@ -7,7 +7,7 @@ public class Main {
         list.insertFirst(2);
         list.insertFirst(1);
         list.insertFirst(6);
-        list.deleteFirst();
+        list.deleteFirst(); 
         list.insert(7,3);
         list.insertLast(8);
 
@@ -32,5 +32,13 @@ public class Main {
         dlist.deleteFirst();
         dlist.delete(2);
         dlist.display();
+
+
+        LRU lru=new LRU(3);
+        lru.put(1,1);
+        lru.put(2,2);
+        lru.put(3,3);
+        lru.get(2);
+        lru.put(4,4);
     }
 }
