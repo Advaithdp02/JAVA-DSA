@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         LL list = new LL();
@@ -40,5 +40,14 @@ public class Main {
         lru.put(3,3);
         lru.get(2);
         lru.put(4,4);
+
+
+
+
+        BinaryTree BT=new BinaryTree();
+        Scanner scanner=new Scanner(System.in);
+        BT.populate(scanner);
+        BT.display();
+        BT.prettyDisplay();
     }
 }
