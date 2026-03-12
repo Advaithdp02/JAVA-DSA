@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         LL list = new LL();
@@ -44,10 +44,17 @@ public class Main {
 
 
 
-        BinaryTree BT=new BinaryTree();
-        Scanner scanner=new Scanner(System.in);
-        BT.populate(scanner);
-        BT.display();
-        BT.prettyDisplay();
+        // BinaryTree BT=new BinaryTree();
+        // Scanner scanner=new Scanner(System.in);
+        // BT.populate(scanner);
+        // BT.display();
+        // BT.prettyDisplay();
+
+        BinarySearchTree BST=new BinarySearchTree();
+        // int[] nums={1,2,5,7,40,8,29,2,6};
+        int[] sortedNums={1,2,3,4,5,6,7,8,9};
+        // BST.populate(nums);
+        BST.populateSorted(sortedNums);
+        BST.display();
     }
 }
